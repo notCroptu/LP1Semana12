@@ -22,7 +22,7 @@ namespace Palindrome
             {
                 for (int i = 0; i < input.Length; i++)
                 {
-                    if (s[i] != s[input.Length - i]) return false;
+                    if (input[i] != input[input.Length - i - 1]) return false;
                 }
                 return true;
             }
